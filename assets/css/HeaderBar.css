@@ -5,11 +5,6 @@
 #HeaderBar{
     padding: var(--padding-small);
     display: flex;
-    background-color: var(--background);
-    border: var(--border);
-    border-radius: 32px;
-    color: var(--text-color);
-    height: fit-content;
 }
 
 

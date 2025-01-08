@@ -5,10 +5,18 @@ body{
     "ProjPlan Mail Chat"
     "ProjPlan Articles Chat"
     "Search Search Search";
+    grid-template-rows: auto 1fr 1fr auto;
     gap: var(--margin);
     padding: var(--margin);
     height: 100vh;
     background-color: #222;
+}
+
+body > *{
+    background-color: var(--background);
+    border: var(--border);
+    border-radius: 32px;
+    color: var(--text-color);
 }
 
 #HeaderBar{
