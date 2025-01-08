@@ -1,0 +1,40 @@
+:root{
+    --margin: 20px;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "Hbar Hbar Hbar"
+    "ProjPlan Mail Chat"
+    "ProjPlan Articles Chat"
+    "Search Search Search";
+    gap: var(--margin);
+    padding: var(--margin);
+    height: 100vh;
+    background-color: #222;
+}
+
+#HeaderBar{
+    grid-area: Hbar;
+}
+
+#ProjectPlanner{
+    grid-area: ProjPlan;
+}
+
+#Mail{
+    grid-area: Mail;
+}
+
+#Articles{
+    grid-area: Articles;
+}
+
+#ChatAI{
+    grid-area: Chat;
+}
+
+#SearchBar{
+    grid-area: Search;
+}
