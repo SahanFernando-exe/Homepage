@@ -1,0 +1,41 @@
+:root{
+    --background: rgba(100, 100, 100, 1);
+    --border: 2px solid rgba(200, 200, 200, 1);
+
+    --padding-small: 12px;
+    --text-color: rgba(200, 200, 200, 1);
+}
+
+.Spacer{
+    flex-grow: 1;
+}
+ 
+#HeaderBar{
+    padding: var(--padding-small);
+    display: flex;
+    background-color: var(--background);
+    border: var(--border);
+    margin: 20px;
+    border-radius: 32px;
+    color: var(--text-color);
+}
+
+
+#DateTime{
+    display: grid;
+    grid-template-areas:
+    "DayName Time"
+    "Date Time";
+}
+
+#Time{
+    grid-area: Time;
+}
+
+#DayName{
+    grid-area: DayName;
+}
+
+#Date{
+    grid-area: Date;
+}
