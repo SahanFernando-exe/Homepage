@@ -1,14 +1,24 @@
-.Spacer{
-    flex-grow: 1;
-}
- 
-#HeaderBar{
-    padding: var(--padding-small);
+ #HeaderBar{
     display: flex;
 }
 
 
+#Weather{
+    width: 50%;
+}
+
+
+#SettingsMenu{
+    background-color: #888;
+    height: 100%;
+    width: 100px;
+}
+
+
 #DateTime{
+    width: 50%;
+    justify-content: right;
+    margin: var(--padding-small);
     display: grid;
     grid-template-areas:
     "DayName Time"
@@ -17,12 +27,20 @@
 
 #Time{
     grid-area: Time;
+    border-left: var(--border-inner);
+    padding: 0 10px;
 }
 
 #DayName{
     grid-area: DayName;
+    border-right: var(--border-inner);
+    border-bottom: var(--border-inner);
+    padding: 0 10px;
 }
 
 #Date{
     grid-area: Date;
+    border-right: var(--border-inner);
+    border-top: var(--border-inner);
+    padding: 0 10px;
 }

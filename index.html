@@ -9,31 +9,35 @@
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/HeaderBar.css">
+    <link rel="stylesheet" href="./assets/css/SettingsMenu.css">
+    <script src="./assets/js/settings.js"></script>
   </head>
   <body>
     <section id="HeaderBar">
         <section id="Weather">
             <section id="CurrentTemperature">
-                <h3>32</h3>
+                <h1>32</h1>
             </section>
         </section>
 
-        <section class="Spacer"></section>
+        <section id="SettingsMenu" onclick="this.classList.toggle('active'); callfunc();">
+            <img id="GearIcon" src="./assets/images/icons/gear.svg">
+            <section id="SettingsPanelBlur">
+                <section id="SettingsPanel">
 
-        <section id="SettingsMenu">
+                </section>
+            </section>
         </section>
-
-        <section class="Spacer"></section>
 
         <section id="DateTime">
             <section id="Time">
-                <h3>13:08</h3>
+                <h1>13:08</h1>
             </section>
             <section id="DayName">
-                <h4>Wednesday</h4>
+                <h3>Wednesday</h3>
             </section>
             <section id="Date">
-                <h4>24 - 03 - 25</h4>
+                <h3>24 - 03 - 25</h3>
             </section>
         </section>
     </section>
